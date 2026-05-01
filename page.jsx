@@ -2,7 +2,7 @@
 import { useState, useRef, useEffect } from "react";
 
 // ─── CONFIG ───────────────────────────────────────────────────────────────────
-const GEMINI_API_KEY   = "process.env.NEXT_PUBLIC_GEMINI_API_KEY;";
+const GEMINI_API_KEY   = process.env.NEXT_PUBLIC_GEMINI_API_KEY || "AIzaSyD2H1Z3HTMmOzfbYINyMxESLkjJJQdjmnU";
 const LS_PRO_LINK      = "https://getoptimized.lemonsqueezy.com/checkout/buy/fd3c4a1c-4f8a-4892-91aa-1198c10030f2";
 const LS_CREDITS_LINK  = "https://getoptimized.lemonsqueezy.com/checkout/buy/4c83e847-d814-43e7-846b-ffd9e28d98a3";
 const BUSINESS_NAME    = "CareerBoost Kenya";
@@ -368,4 +368,4 @@ const CSS = `
 
   /* MODE SELECTOR */
   .mode-section { max-width:1100px; margin:0 auto; padding:48px 48px 0; }
-  .mode-title { font-family:'Cormorant Garamond',serif; font-size:28px; font-weight:700; margin-bottom:6px;
+  .mode-title { font-family:'Cormorant Garamond',serif; font-size
